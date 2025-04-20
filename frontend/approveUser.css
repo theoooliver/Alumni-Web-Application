@@ -1,0 +1,38 @@
+.approve-user-container {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.approve-user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.approve-user-info {
+  margin-right: 20px;
+}
+
+.approve-user-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.approve-user-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.discard-user-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}

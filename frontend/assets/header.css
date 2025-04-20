@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #004d00; /* Darker green for a professional look */
+  height: 60px; /* Ensure consistent header height */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+}
+
+.header-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 20px; /* Add spacing between the logo and the links */
+  cursor: pointer; /* Indicate the logo is clickable */
+}
+
+.header-links {
+  display: flex;
+  align-items: center; /* Vertically center the text links */
+  gap: 15px; /* Add spacing between links */
+  margin-right: auto; /* Push the links to the left, next to the logo */
+}
+
+.header-link {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center the text and icon */
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  height: 40px; /* Match the height of the dropdown items */
+  line-height: 40px; /* Ensure vertical alignment */
+}
+
+.header-link:hover {
+  color: #80c080; /* Softer hover color */
+}
+
+.header-link svg {
+  position: relative;
+  top: 2px; /* Move the triangle 1px below */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100px; /* Set a fixed width for the button */
+  text-align: center; /* Center-align the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Add spacing between text and the triangle */
+  position: relative;
+  right: 50px; /* Move the button further to the left to match the dropdown menu */
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.dropdown-button svg {
+  position: relative;
+  top: 1px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0; /* Align the dropdown menu with the button */
+  transform: translateX(-50%); /* Center the dropdown */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  color: green;
+}
+
+.dropdown-menu button:hover {
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+.admin-dropdown-menu {
+  position: absolute;
+  top: 100%; /* Align the dropdown menu directly below the trigger */
+  left: 570px; /* Move the dropdown to the left relative to its trigger */
+  transform: translateX(-50%); /* Center the dropdown */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  width: 170px; /* Set a fixed width for the dropdown */
+  text-align: center; /* Center-align the text */
+}
+
+.admin-dropdown-menu .dropdown-item {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center the text */
+  justify-content: center; /* Center-align the text horizontally */
+  padding: 10px 15px; /* Add padding for better spacing */
+  font-size: 14px;
+  color: green;
+  cursor: pointer;
+  height: 20px; /* Set a consistent height for dropdown items */
+  line-height: 20px; /* Ensure vertical alignment */
+}
+
+.admin-dropdown-menu .dropdown-item:hover {
+  background-color: rgba(0, 128, 0, 0.1);
+  color: darkgreen;
+}

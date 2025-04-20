@@ -1,0 +1,38 @@
+.approve-container {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.approve-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.approve-info {
+  margin-right: 20px;
+}
+
+.approve-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.approve-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.discard-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
