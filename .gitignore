@@ -6,6 +6,9 @@ package-lock.json
 .env
 .env.local
 .env.*.local
+.env.*           # cobre .env.production/.env.staging, etc.
+.envrc           # direnv
+.npmrc           # pode conter tokens do npm
 !.env.example
 
 # Build files
@@ -32,3 +35,20 @@ npm-debug.log*
 # Testing
 coverage/
 .nyc_output/
+
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.pkcs12
+*.p8
+*.der
+*service-account*.json
+*credentials*.json
+
+# PM2 configs com segredos (use um ecosystem.config.example.js no repo)
+backend/config/ecosystem.config.*
